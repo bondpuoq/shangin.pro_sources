@@ -1,55 +1,137 @@
+* {
+  font-size: 14px;
+  font-family: "Comfortaa-bold";
+  color: #FFF; }
+
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: "Comfortaa-bold";
-  background-color: #66CC99; }
+  background-color: #6699CC; }
 
-.header .logo img {
-  width: 150px;
-  height: 150px;
-  display: block; }
-
-.header .caption {
-  text-align: center; }
-
-.main .pocket {
-  display: inline-block; }
-  .main .pocket .pocket-title {
-    font-size: 14pt;
-    position: relative;
-    z-index: 5;
-    background-color: #fff; }
-  .main .pocket .pocket-shirt {
-    width: 180px;
-    height: 200px;
-    background-color: green;
-    position: relative;
-    border: 1px dashed yellow;
-    -webkit-box-shadow: 0 0 0 5px green;
-    box-shadow: 0 0 0 5px green;
+.header {
+  top: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  background-color: #003366;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 1em; }
+  .header div {
+    float: left; }
+  .header .logo {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    z-index: 10; }
-  .main .pocket .pocket-shirt:after {
-    width: 0;
-    height: 10px;
-    border-left: solid 95px transparent;
-    border-right: solid 95px transparent;
-    border-top: solid 20px green;
-    content: "";
-    position: absolute;
-    top: 203px;
-    left: -5px; }
+    float: left;
+    padding: 0.5em;
+    width: 15%; }
+    .header .logo img {
+      margin-left: 1em;
+      background-color: #FF9933;
+      -webkit-box-shadow: 2px 2px 2px 0 #993300;
+      box-shadow: 2px 2px 2px 0 #993300;
+      border-radius: 50%;
+      padding: 0.2em;
+      width: 7em;
+      height: 7em;
+      display: block; }
+  .header .caption {
+    width: 85%;
+    text-align: right;
+    font-size: 3em;
+    font-family: Lobster;
+    color: #FF9933;
+    text-shadow: 2px 2px 1px #993300;
+    float: left; }
+    .header .caption .sub-text {
+      float: left;
+      margin-left: 3.7em;
+      font-family: Lobster;
+      font-size: 0.5em; }
 
-.footer .textmenu ul {
-  list-style: none;
-  float: left; }
+.menu {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #006699;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+  .menu ul.items {
+    list-style: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+    .menu ul.items li {
+      display: block;
+      padding: 0.5em;
+      float: left;
+      text-decoration: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      cursor: pointer;
+      border-bottom: solid 3px transparent; }
+    .menu ul.items li:hover {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-bottom: solid 3px #FF9933;
+      color: #FF9933; }
+
+.main .screen {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .main .screen .image {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+    .main .screen .image img {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      display: block; }
+  .main .screen .text {
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 0;
+    border: 0; }
+    .main .screen .text h3.title {
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      font-family: Lobster;
+      color: #FF9933;
+      text-shadow: 2px 2px 1px #993300; }
+    .main .screen .text .content {
+      padding: 0.5em;
+      margin-top: 0.5em;
+      font-size: 1.2em;
+      line-height: 1.2em;
+      color: #003366;
+      text-align: justify;
+      text-shadow: 1px 2px 0 #3399CC; }
+
+.scrollTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+  padding: 1em;
+  color: black;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .centered {
   text-align: center; }
