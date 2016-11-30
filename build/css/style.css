@@ -34,6 +34,8 @@ body {
     font-family: Lobster;
     color: #FF9933;
     text-shadow: 2px 2px 1px #993300; }
+  .header .sub-text {
+    font-size: 0.8vw; }
 
 .menu {
   width: 100%;
@@ -59,7 +61,7 @@ body {
       box-sizing: border-box;
       cursor: pointer;
       border-bottom: solid 3px transparent;
-      font-size: 1.5em; }
+      font-size: 1.2vw; }
     .menu ul.items li:hover {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
