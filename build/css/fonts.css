@@ -1,23 +1,9 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Comfortaa-bold";
-  src: url(../fonts/Comfortaa/Comfortaa-Bold.eot);
-  /* Для IE5-8 */
-  src: url(../fonts/Comfortaa/Comfortaa-Bold.ttf);
-  /* Для остальных браузеров */ }
-
-@font-face {
-  font-family: "Comfortaa-light";
-  src: url(../fonts/Comfortaa/Comfortaa-Light.eot);
-  /* Для IE5-8 */
-  src: url(../fonts/Comfortaa/Comfortaa-Light.ttf);
-  /* Для остальных браузеров */ }
-
-@font-face {
   font-family: "Comfortaa-Regular";
-  src: url(../fonts/Comfortaa/Comfortaa-Light.eot);
+  src: url(../fonts/Comfortaa/Comfortaa-Regular.eot);
   /* Для IE5-8 */
-  src: url(../fonts/Comfortaa/Comfortaa-Light.ttf);
+  src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf);
   /* Для остальных браузеров */ }
 
 @font-face {
@@ -25,11 +11,4 @@
   src: url(../fonts/Lobster/Lobster-Regular.eot);
   /* Для IE5-8 */
   src: url(../fonts/Lobster/Lobster-Regular.ttf);
-  /* Для остальных браузеров */ }
-
-@font-face {
-  font-family: "Pattaya";
-  src: url(../fonts/Pattaya/Pattaya-Regular.eot);
-  /* Для IE5-8 */
-  src: url(../fonts/Pattaya/Pattaya-Regular.ttf);
   /* Для остальных браузеров */ }

@@ -1,6 +1,6 @@
 * {
   font-size: 14px;
-  font-family: "Comfortaa-bold";
+  font-family: "Comfortaa-regular";
   color: #FFF;
 }
 
@@ -11,46 +11,30 @@ body {
 }
 
 .header {
-  top: 0;
-  z-index: 100;
-  display: block; 
   width: 100%;
   background-color: #003366;
   box-sizing: border-box;
-  padding-right: 1em;
-  div {
-    float: left;
-  }
   .logo {
-    box-sizing: border-box;
     float: left;
-    padding: 0.5em;
-    width: 15%;
+    box-sizing: border-box;
+    width: 10%;
+    height: 100%;
+    padding: 1vw;
     img {
-      margin-left: 1em;
+      max-width: 100px;
       background-color: #FF9933;
       box-shadow: 2px 2px 2px 0 #993300;
       border-radius: 50%;
       padding: 0.2em;
-      width: 7em;
-      height: 7em;
-      display: block;
+      display: table;
     }
   }
   .caption {
     width: 85%;
-    text-align: right;
     font-size: 3em;
     font-family: Lobster;
     color: #FF9933;
     text-shadow: 2px 2px 1px #993300;
-    float: left;  
-    .sub-text {
-      float: left;
-      margin-left: 3.7em;
-      font-family: Lobster;
-      font-size: 0.5em;
-    }
   }
 }
 
@@ -75,6 +59,7 @@ body {
       box-sizing: border-box;
       cursor: pointer;
       border-bottom: solid 3px transparent;
+      font-size: 1.5em;
     }
     li:hover {
       box-sizing: border-box;
@@ -112,9 +97,10 @@ body {
       margin: 0;
       border: 0;
       h3.title {
-        font-size: 2em;
+        font-size: 1.7vw;
         margin: 0;
         padding: 0;
+        text-align: center;
         font-family: Lobster;
         color: #FF9933;
         text-shadow: 2px 2px 1px #993300;
@@ -122,9 +108,9 @@ body {
       .content {
         padding: 0.5em;
         margin-top: 0.5em;
-        font-size: 1.2em;
-        line-height: 1.2em;
-        color: #003366;
+        font-size: 1.1vw;
+        line-height: 1.4em;
+        color: #FFF;
         text-align: justify;
         text-shadow: 1px 2px 0 #3399CC;
       }
