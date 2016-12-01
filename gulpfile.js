@@ -30,6 +30,12 @@ gulp.task('haml', function() {
   .pipe(connect.reload());
 });
 
+// Html copying
+gulp.task('html', function() {
+  gulp.src('./src/*.html')
+  .pipe(gulp.dest('./build/'))
+});
+
 // Minificate images
 gulp.task('img', function() {
   gulp.src('./src/img/*')
@@ -70,11 +76,12 @@ gulp.task('connect', function() {
 gulp.task('watch', function() {
   gulp.watch('./src/sass/*.scss', ['sass']);
   gulp.watch('./src/*.haml', ['haml']);
+  gulp.watch('./src/*.html', ['html']);
   gulp.watch('./src/img/', ['img']);
   gulp.watch('./src/fonts/', ['fontmin']);
   gulp.watch('./src/js/*.js', ['js']);
 });
 
 // Default task
-gulp.task('default', ['connect', 'haml', 'sass', 'img', 'fontmin', 'js', 'watch']);
+gulp.task('default', ['connect', 'haml', 'html', 'sass', 'img', 'fontmin', 'js', 'watch']);
 
