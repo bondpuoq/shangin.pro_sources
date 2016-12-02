@@ -29,10 +29,12 @@
           %ul.items
             {{#each data}}
             %li.js-anchor{data-target: "{{anchor}}"}
-              {{title}}
+              %a{href: "{{anchor}}"}
+                {{title}}
             {{/each}}
             %li.js-anchor{data-target: "contacts"}
-              Контакты
+              %a{href: "contacts"}
+                Контакты
     .main
       #promo-listing-container.promo-listing
         %script{type: "text/x-handlebars-template", id: "promo-listing-template"}
@@ -40,7 +42,7 @@
           .screen.clearfix{id: "{{anchor}}"}
             {{#if odd}}              
             .image
-              %img.background{src:"{{img}}"}
+              %img.background{src:"{{img}}", alt: "{{title}}"}
             .text
               %h3.title
                 {{title}}
@@ -53,7 +55,7 @@
               .content
                 {{text}}
             .image
-              %img.background{src:"{{img}}"}
+              %img.background{src:"{{img}}", alt: "{{title}}"}
             {{/if}}
           {{/each}}
           .screen.clearfix{id: "contacts"}
@@ -69,7 +71,7 @@
                 %br
                 Ваш личный менеджер Алексей
             .image
-              %img.background{src:"img/contacts_hd.png"}
+              %img.background{src:"img/contacts_hd.png", alt: "Контакты"}
     #scrollTop.scrollTop.hidden
       Вверх
 

@@ -4702,6 +4702,7 @@ function MainMenu() {
   }
 
   function _scrollTo() {
+    event.preventDefault();
     var whereScroll, scrollTarget;
     whereScroll = $(this).data('target');
     scrollTarget = document.getElementById(whereScroll);
