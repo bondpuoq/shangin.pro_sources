@@ -18,7 +18,14 @@
   promoList.init(mainData, listingTemplateMarkup);
   promoList.render($promoListingContainer);
   $(window).on('scroll', showScrollTop);
-  $('#scrollTop').on('click',scrollUp);
+  $('#scrollTop').on('click', scrollUp);
+  $('#send_mail').on('click', sendEmail);
+
+  function sendEmail() {
+    var feedback = new Feedback();
+    feedback.send();
+    console.log('check email');
+  }
 
   function showScrollTop() {
     if ($(this).scrollTop() > 100) {

@@ -78,7 +78,8 @@ body {
 .main {
   .screen {
     border: 0;
-    margin: 0;
+    width: 1000px;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     .image {
@@ -119,6 +120,9 @@ body {
         color: #FFF;
         text-align: justify;
         text-shadow: 1px 2px 0 #3399CC;
+        a {
+          font-size: inherit;
+        }
       }
     }
   }
@@ -147,4 +151,10 @@ body {
   width: 100%;
   content: "";
   clear: both;
+}
+#send_mail {
+  display: inline-block;
+  background: black;
+  color: white;
+  cursor: pointer;
 }
